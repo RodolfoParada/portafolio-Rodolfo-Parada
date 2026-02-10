@@ -8,7 +8,7 @@ class Navegacion extends HTMLElement {
  connectedCallback() {
    this.shadowRoot.innerHTML = `
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-     <link rel="stylesheet" href="/css/nav.css"/>
+     <link rel="stylesheet" href="./css/nav.css"/>
       <link rel="stylesheet" href="css/dark-mode.css"/>
    
        <nav class="navbar navbar-expand-lg navbar-light fixed-top color px-3">
@@ -29,7 +29,7 @@ class Navegacion extends HTMLElement {
          
            <div class="d-flex align-items-center gap-2 ms-lg-auto mt-2 mt-lg-0">
              <mi-modo-oscuro></mi-modo-oscuro>
-             <img src="assets/images/rodolfo3.png" alt="Perfil" class="rounded-circle img-perfil"
+             <img src="/assets/images/rodolfo3.png" alt="Perfil" class="rounded-circle img-perfil"
              style="width: 40px; height: 40px; object-fit: cover;">
            </div>
          </div>
