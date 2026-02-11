@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/experiencia.css"/>
-    <link rel="stylesheet" href="css/dark-mode.css">
-    <title>Experiencia</title>
-</head>
-<body>
-    <nav>
-        <mi-navegacion></mi-navegacion>
-    </nav> 
 
-    <main>
       <div class="container experiencia">    
        <mi-acordeon data='[
       {
@@ -31,37 +16,4 @@
        ]'>
       </mi-acordeon>
     </div>
-    </main>
-    <footer>
-        <mi-footer></mi-footer>
-    </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/nav.js" defer></script>
-        <script src="js/footer.js" defer></script>
-        <script src="js/acordeon.js" defer></script>
-        <script src="js/dark-mode.js" defer></script>
-
-     <script>
-    
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".accordion-button");
-
-    buttons.forEach((button) => {
-      button.addEventListener("click", function () {
-        // Remueve la clase activo de todos
-        buttons.forEach(btn => btn.classList.remove("activo"));
-        
-        // Agrega la clase solo al botón actual si no está colapsado
-        // (esperamos un momento porque Bootstrap primero hace toggle de clase)
-        setTimeout(() => {
-          if (!this.classList.contains("collapsed")) {
-            this.classList.add("activo");
-          }
-        }, 10); // pequeño delay para esperar a que Bootstrap actualice
-      });
-    });
-  });
-</script>
-    
-</body>
-</html>
+ 

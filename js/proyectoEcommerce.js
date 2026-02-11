@@ -210,7 +210,6 @@ p.botones.forEach(b => {
 });
 
 
-
   }
 }
 
