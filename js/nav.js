@@ -8,7 +8,7 @@ class Navegacion extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="./css/nav.css"/>
-      <link rel="stylesheet" href="css/dark-mode.css"/>
+      <link rel="stylesheet" href="./css/dark-mode.css"/>
    
       <nav class="navbar navbar-expand-lg navbar-light fixed-top color px-3">
         <div class="container-fluid">
