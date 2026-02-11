@@ -68,10 +68,10 @@ function initProyectosLogic() {
 }
 
 // Registro de Rutas [cite: 843-846]
-router.on('/', () => loadView('index'));
-router.on('experiencia', () => loadView('experiencia'));
-router.on('formacion', () => loadView('formacion'));
-router.on('proyectos', () => loadView('proyectos'));
+router.on('/', () => loadView('#/index'));
+router.on('#/experiencia', () => loadView('experiencia'));
+router.on('#/formacion', () => loadView('formacion'));
+router.on('#/proyectos', () => loadView('proyectos'));
 
 document.addEventListener('DOMContentLoaded', () => {
     // Interceptar clics en enlaces con data-link 

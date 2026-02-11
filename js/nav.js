@@ -21,16 +21,16 @@ class Navegacion extends HTMLElement {
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-white" href="/" data-link>Sobre mí</a>
+                <a class="nav-link text-white" href="#/" data-link>Sobre mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="/experiencia" data-link>Experiencia</a>
+                <a class="nav-link text-white" href="#/experiencia" data-link>Experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="/formacion" data-link>Formación</a>
+                <a class="nav-link text-white" href="#/formacion" data-link>Formación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="/proyectos" data-link>Proyectos</a>
+                <a class="nav-link text-white" href="#/proyectos" data-link>Proyectos</a>
               </li>
             </ul>
             
