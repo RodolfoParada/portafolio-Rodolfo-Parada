@@ -1,34 +1,35 @@
 class Router {
     constructor() {
         this.routes = {};
-        // Escuchar cambios en el hash (ej. cuando el usuario usa las flechas del navegador)
+        // Escucha cambios de hash para permitir navegación con flechas del navegador
         window.addEventListener('hashchange', () => this.route());
     }
 
     on(path, handler) {
-        // Guardamos la ruta tal cual la definimos (ej. "#/proyectos")
+        // Guardamos la ruta exacta incluyendo el # (ej: "#/proyectos") [cite: 3682]
         this.routes[path] = handler;
     }
 
     navigate(path) {
-        // Si ya estamos en esa ruta, no hacemos nada
         if (window.location.hash === path) return;
-        // Cambiar el hash dispara automáticamente el evento 'hashchange'
+        // Al cambiar el hash, se dispara automáticamente el evento 'hashchange'
         window.location.hash = path;
     }
 
     route() {
-        // Obtenemos el hash actual o "/" si está vacío
-        const p = window.location.hash || '/';
+        // Obtenemos el hash actual. Si está vacío, usamos '/' [cite: 3692]
+        let p = window.location.hash || '/';
         
+        // Si entras a la URL base sin hash, forzamos la ruta '/'
+        if (p === '') p = '/';
+
         const handler = this.routes[p];
         if (handler) {
             handler();
         } else {
-            console.warn("Ruta no encontrada, redirigiendo a inicio:", p);
-            // Intentamos cargar la raíz si la ruta no existe
-            const rootHandler = this.routes['/'] || this.routes['#/'];
-            rootHandler?.();
+            console.warn("Ruta no encontrada, cargando inicio:", p);
+            // Intentamos cargar la raíz si la ruta falla
+            this.routes['/']?.();
         }
     }
 }
