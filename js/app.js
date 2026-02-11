@@ -68,7 +68,8 @@ function initProyectosLogic() {
 }
 
 // Registro de Rutas [cite: 843-846]
-router.on('/', () => loadView('#/index'));
+router.on('/', () => loadView('index'));          // Para la carga inicial sin hash
+router.on('#/', () => loadView('index'));         // Para el clic en "Sobre mí"
 router.on('#/experiencia', () => loadView('experiencia'));
 router.on('#/formacion', () => loadView('formacion'));
 router.on('#/proyectos', () => loadView('proyectos'));
