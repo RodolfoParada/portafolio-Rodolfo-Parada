@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="css/proyectos.css"/>
+
+<main class="container mt-4">
+    <div class="tabs-carousel-container proyectos">
+        
+        <div class="d-flex align-items-center position-relative">
+            
+            <button id="scrollLeft" class="scroll-btn" style="z-index: 10;">
+                <img src="./assets/portafolio/flecha-hacia-izquierda.svg" alt="Anterior">
+            </button>
+
+            <ul class="nav nav-tabs flex-nowrap overflow-auto px-5" id="categoriaTabs" style="scroll-behavior: smooth; border-bottom: none;">
+                <li class="nav-item"><button class="nav-link text-black active" data-categoria="clones">Clones</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="crud">CRUD</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="ecommerce">E-Commerce</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="dashboard">Dashboards</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="ia">IA</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="backend">Backend/API</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="frontend">Frontend</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="logica">Lógica</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="juegos">Juegos</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="fullstack">Full Stack</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="empresarial">Sistemas Empresariales</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="seguridad">Seguridad</button></li>
+                <li class="nav-item"><button class="nav-link text-black" data-categoria="ux">Portafolio UX</button></li>
+            </ul>
+
+            <button id="scrollRight" class="scroll-btn" style="z-index: 10;">
+                <img src="./assets/portafolio/flecha-hacia-derecha.svg" alt="Siguiente">
+            </button>
+            
+        </div>
+
+        <div id="contenedorCategoria" class="mt-4">
+            <proyecto-clones class="proyecto" style="display: block;"></proyecto-clones>
+            <proyecto-crud class="proyecto" style="display: none;"></proyecto-crud>
+            <proyecto-ecommerce class="proyecto" style="display: none;"></proyecto-ecommerce>
+            <proyecto-dashboard class="proyecto" style="display: none;"></proyecto-dashboard>
+            <proyecto-ia class="proyecto" style="display: none;"></proyecto-ia>
+            <proyecto-backend class="proyecto" style="display: none;"></proyecto-backend>
+            <proyecto-frontend class="proyecto" style="display: none;"></proyecto-frontend>
+            <proyecto-logica class="proyecto" style="display: none;"></proyecto-logica>
+            <proyecto-juegos class="proyecto" style="display: none;"></proyecto-juegos>
+            <proyecto-fullstack class="proyecto" style="display: none;"></proyecto-fullstack>
+            <proyecto-empresarial class="proyecto" style="display: none;"></proyecto-empresarial>
+            <proyecto-seguridad class="proyecto" style="display: none;"></proyecto-seguridad>
+            <proyecto-ux class="proyecto" style="display: none;"></proyecto-ux>
+        </div>
+    </div>
+</main>
