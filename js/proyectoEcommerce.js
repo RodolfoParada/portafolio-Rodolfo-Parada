@@ -2,24 +2,17 @@ class proyectoEcommerce extends HTMLElement {
   connectedCallback() {
     const proyectos = [
       {
-        titulo: "Proyecto e-commerce wenupillán ",
-        descripcion: "Se desarrolló una página web donde se mejora la accesibilidad y está centrada en el usuario; se mejoró la arquitectura de la página web www.wenupillan.cl, se simula un carrito de compra.",
-        lenguaje: "En el proyecto se utiliza HTML, CSS, JS, Bootstrap",
-        texto:"Se desarrollaron componentes reutilizables utilizando JavaScript puro.",
+        titulo: "Clon Ejemplo Ecommerce 1",
+        descripcion: "Interfaz similar a Spotify construida con React.",
+        lenguaje: "HTML, CSS, JS",
+        texto:"texto para elementos usados en el proyecto",
         video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/RodolfoParada/version-mejorada-wenupillan",
-        vista: "https://rodolfoparada.github.io/version-mejorada-wenupillan/", 
+        codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: "https://github.com/tuusuario/clon-twitter", 
         imagenes: [
-         "assets/ecommerce/wenupillan-home.png",
-         "assets/ecommerce/wenupillan-quienesSomos.png",
-         "assets/ecommerce/wenupillan-restaurant.png",
-         "assets/ecommerce/wenupillan-tienda.png",
-         "assets/ecommerce/wenupillan-contacto.png",
-         "assets/ecommerce/wenupillan-machi.png",
-         "assets/ecommerce/wenupillan-toki.png",
-         "assets/ecommerce/wenupillan-weichafe.png",
-         "assets/ecommerce/wenupillan-lonko.png",
-       
+         "assets/Mantenimiento/Mantenimiento.png",
+         "assets/Mantenimiento/Mantenimiento.png",
+         "assets/Mantenimiento/Mantenimiento.png",
         ]
       },
       {

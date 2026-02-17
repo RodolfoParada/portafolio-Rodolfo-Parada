@@ -3,17 +3,29 @@ class proyectoUX extends HTMLElement {
     const proyectos = [
       {
         titulo: "Proyecto UX wenupillan.cl",
-        descripcion: "Se analizó el sitio web wenupillan.cl del punto de vista UX.",
+        descripcion: "Se analizó el sitio web wenupillan.cl del punto de vista UX y Se desarrolló una página web donde se mejora la accesibilidad y está centrada en el usuario; se mejoró la arquitectura de la información, se simula un carrito de compra. En resumen se mejoró manteniendo la misma identidad.",
         lenguaje: "",
-        texto:"Puedes verlo en Behance haciendo clic en el botón 'Ver Behance'.",
-        video: "https://tu-video-twitter.com",
+        texto:" Se desarrollaron componentes reutilizables y además puedes ver más detalle en los siguientes bótones'.",
+        video: "https://www.youtube.com/watch?v=vGxjEMsdiZ8",
+        codigo: "https://github.com/RodolfoParada/version-mejorada-wenupillan",
+        vista: "https://rodolfoparada.github.io/version-mejorada-wenupillan/", 
         behance: "https://www.behance.net/gallery/232868237/Proyecto-Wenupillan",
         imagenes: [
          "assets/proyectoUx/wenupillan/Portada-Ux.jpeg",
          "assets/proyectoUx/wenupillan/página2.jpg",
          "assets/proyectoUx/wenupillan/página4.jpg",
          "assets/proyectoUx/wenupillan/página3.jpg",
-         "assets/proyectoUx/wenupillan/página5.jpg",      
+         "assets/proyectoUx/wenupillan/página5.jpg",   
+         "assets/proyectoUx/wenupillan/wenupillan-home.png",
+         "assets/proyectoUx/wenupillan/wenupillan-quienesSomos.png",
+         "assets/proyectoUx/wenupillan/wenupillan-restaurant.png",
+         "assets/proyectoUx/wenupillan/wenupillan-tienda.png",
+         "assets/proyectoUx/wenupillan/wenupillan-contacto.png",
+         "assets/proyectoUx/wenupillan/wenupillan-machi.png",
+         "assets/proyectoUx/wenupillan/wenupillan-toki.png",
+         "assets/proyectoUx/wenupillan/wenupillan-weichafe.png",
+         "assets/proyectoUx/wenupillan/wenupillan-lonko.png",
+          
         ]
       },
       {
@@ -126,7 +138,7 @@ class proyectoUX extends HTMLElement {
       <link rel="stylesheet" href="css/proyectos.css"/>
       <link rel="stylesheet" href="css/dark-mode.css"/>
       <section class="mb-5">
-        <h5 class="fw-bold">Portafolio UX : Análisis e Investigación.</h5>
+        <h5 class="fw-bold">Portafolio UX : Análisis e Investigación y Desarrollo Web.</h5>
         <paginacion-cards></paginacion-cards>
       </section>
     `;
