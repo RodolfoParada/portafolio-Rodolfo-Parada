@@ -2,16 +2,20 @@ class proyectoFrontend extends HTMLElement {
     connectedCallback() {
     const proyectos = [
       {
-        titulo: "Clon Ejemplo Frontend 1",
-        descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
+        titulo: "pokeapi-v1-javascript",
+        descripcion: "Consumo de la pokemonApi, componentes: modo Oscuro, mostrar Pokemons, filtrar Porkemons, localState, lazy loading, pokemon worker, detallePokemon, paginación.",
         lenguaje: "HTML, CSS, JS",
         texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
+        video: "https://www.youtube.com/watch?v=lKRSAp02Qhs",
+        codigo: "https://github.com/RodolfoParada/pokeapi-v1",
+        vista: "https://rodolfoparada.github.io/pokeapi-v1/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+         "assets/frontend/poke-normal.png",
+         "assets/frontend/poke-todos.png",
+         "assets/frontend/poke-detalle.png",
+          "assets/frontend/poke-normal-modoOscuro.png",
+         "assets/frontend/poke-todos-modoOscuro.png",
+         "assets/frontend/poke-detalle-modoOscuro.png",
         ]
       },
       {
