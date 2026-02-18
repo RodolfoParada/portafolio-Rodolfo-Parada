@@ -6,7 +6,7 @@ class proyectoClones extends HTMLElement {
         descripcion: "Es un Clon para simular la interfaz del Ministerio de Minería de Chile.",
         lenguaje: "HTML, CSS, JS",
         texto:"",
-        video: "https://tu-video-twitter.com",
+        video: "https://www.youtube.com/watch?v=FO0bpAdXXNw",
         codigo: "https://github.com/RodolfoParada/clones-paginas-web",
         vista: "https://rodolfoparada.github.io/clones-paginas-web/index.html", 
         imagenes: [
