@@ -3,7 +3,7 @@ class proyectoClones extends HTMLElement {
     const proyectos = [
       {
         titulo: "Clon Ministerio de Minería",
-        descripcion: "Es un Clon para simular la interfaz del Ministerio de Minería de Chile.",
+        descripcion: "Es un Clon para simular la interfaz del Ministerio de Minería de Chile del primer semestre del año 2025",
         lenguaje: "HTML, CSS, JS",
         texto:"",
         video: "https://www.youtube.com/watch?v=FO0bpAdXXNw",
