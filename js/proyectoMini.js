@@ -26,26 +26,26 @@ class proyectoMini extends HTMLElement {
        
         ]
       },
-      {
-        titulo: "Clon Ejemplo  Frontend 3",
-        descripcion: "Simulación de la red social usando Vue.js.",
-        lenguaje: "HTML, CSS, JS",
+       {
+        titulo: "Proyecto: Calculo de Presupuesto",
+        descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
+        lenguaje: "HTML, CSS, JS, JQUERY",
         texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
+        video: "https://www.youtube.com/watch?v=jt0_rHnyLKQ",
+        codigo: "https://github.com/RodolfoParada/PresupuestoAppJS",
+        vista: "https://rodolfoparada.github.io/PresupuestoAppJS/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+         "assets/miniProyecto/presupuesto.png",
         ]
       },
         {
         titulo: "Clon Ejemplo  Frontend 4",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: "", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
