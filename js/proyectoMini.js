@@ -5,7 +5,7 @@ class proyectoMini extends HTMLElement {
         titulo: "Cálculo de propinas",
         descripcion: "Es un proyecto para prácticar el DOM, CSS, Javacript, Jest y Cypress",
         lenguaje: "Javascript Vanilla",
-        texto:"Puedes ir a los siguientes botones.'.",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://www.youtube.com/watch?v=XQcG9ifaY04",
         codigo: "https://github.com/RodolfoParada/Calculadora-de-Propinas",
         vista: "https://rodolfoparada.github.io/Calculadora-de-Propinas/", 
@@ -14,42 +14,40 @@ class proyectoMini extends HTMLElement {
         ]
       },
      {
-        titulo: "Clon Ejemplo  Frontend 2",
-        descripcion: "Interfaz similar a Spotify construida con React.",
+        titulo: "CalculadoraJS",
+        descripcion: "Es una calculadora básica con HTML, CSS y JavaScript.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=a5ih0Kc-Jps",
+        codigo: "https://github.com/RodolfoParada/calculadoraJS",
+        vista: "https://rodolfoparada.github.io/calculadoraJS/", 
         imagenes: [
-        "assets/Mantenimiento/Mantenimiento.png",
-        "assets/Mantenimiento/Mantenimiento.png",
-        "assets/Mantenimiento/Mantenimiento.png",
+         "assets/miniProyecto/calculadora.png",
+       
         ]
       },
-      {
-        titulo: "Clon Ejemplo  Frontend 3",
-        descripcion: "Simulación de la red social usando Vue.js.",
-        lenguaje: "HTML, CSS, JS",
+       {
+        titulo: "Proyecto: Calculo de Presupuesto",
+        descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
+        lenguaje: "HTML, CSS, JS, JQUERY",
         texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
+        video: "https://www.youtube.com/watch?v=jt0_rHnyLKQ",
+        codigo: "https://github.com/RodolfoParada/PresupuestoAppJS",
+        vista: "https://rodolfoparada.github.io/PresupuestoAppJS/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+         "assets/miniProyecto/presupuesto.png",
         ]
       },
         {
-        titulo: "Clon Ejemplo  Frontend 4",
-        descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
-        lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
+        titulo: "lA Carta",
+        descripcion: "Simulación de una carta de menú",
+        lenguaje: "HTML, CSS, JS, JQUERY",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=DXHqcc2B42s",
+        codigo: "https://github.com/RodolfoParada/carta",
+        vista: "https://rodolfoparada.github.io/carta/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+          "assets/miniProyecto/carta.png",
         ]
       },
       {
