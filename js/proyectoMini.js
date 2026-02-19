@@ -39,17 +39,15 @@ class proyectoMini extends HTMLElement {
         ]
       },
         {
-        titulo: "Clon Ejemplo  Frontend 4",
-        descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
-        lenguaje: "HTML, CSS, JS",
+        titulo: "lA Carta",
+        descripcion: "Simulación de una carta de menú",
+        lenguaje: "HTML, CSS, JS, JQUERY",
         texto:"Puedes revisar más información en los siguientes botones:",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
-        vista: "", 
+        video: "https://www.youtube.com/watch?v=DXHqcc2B42s",
+        codigo: "https://github.com/RodolfoParada/carta",
+        vista: "https://rodolfoparada.github.io/carta/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+          "assets/miniProyecto/carta.png",
         ]
       },
       {
