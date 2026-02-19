@@ -5,7 +5,7 @@ class proyectoMini extends HTMLElement {
         titulo: "Cálculo de propinas",
         descripcion: "Es un proyecto para prácticar el DOM, CSS, Javacript, Jest y Cypress",
         lenguaje: "Javascript Vanilla",
-        texto:"Puedes ir a los siguientes botones.'.",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://www.youtube.com/watch?v=XQcG9ifaY04",
         codigo: "https://github.com/RodolfoParada/Calculadora-de-Propinas",
         vista: "https://rodolfoparada.github.io/Calculadora-de-Propinas/", 
@@ -14,16 +14,16 @@ class proyectoMini extends HTMLElement {
         ]
       },
      {
-        titulo: "Clon Ejemplo  Frontend 2",
-        descripcion: "Interfaz similar a Spotify construida con React.",
+        titulo: "CalculadoraJS",
+        descripcion: "Es una calculadora básica con HTML, CSS y JavaScript.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=a5ih0Kc-Jps",
+        codigo: "https://github.com/RodolfoParada/calculadoraJS",
+        vista: "https://rodolfoparada.github.io/calculadoraJS/", 
         imagenes: [
-        "assets/Mantenimiento/Mantenimiento.png",
-        "assets/Mantenimiento/Mantenimiento.png",
-        "assets/Mantenimiento/Mantenimiento.png",
+         "assets/miniProyecto/calculadora.png",
+       
         ]
       },
       {
