@@ -26,11 +26,26 @@ class proyectoMini extends HTMLElement {
        
         ]
       },
+      {
+        titulo: "Mundo Peliculas",
+        descripcion: "Simula la interfaz de una aplicación de películas.",
+        lenguaje: "HTML, CSS, JS",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=gzBzWR99VzY",
+        codigo:"https://github.com/RodolfoParada/mundoPeliculas",
+        vista: "https://rodolfoparada.github.io/mundoPeliculas/", 
+        imagenes: [
+        "assets/miniProyecto/mundoPelicula/mundoPelicula.png",
+        "assets/miniProyecto/mundoPelicula/mundoPelicula1.png",
+        "assets/miniProyecto/mundoPelicula/mundoPelicula2.png",
+        "assets/miniProyecto/mundoPelicula/mundoPelicula3.png",
+        ]
+      },
        {
         titulo: "Proyecto: Calculo de Presupuesto",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS, JQUERY",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://www.youtube.com/watch?v=jt0_rHnyLKQ",
         codigo: "https://github.com/RodolfoParada/PresupuestoAppJS",
         vista: "https://rodolfoparada.github.io/PresupuestoAppJS/", 
@@ -54,7 +69,7 @@ class proyectoMini extends HTMLElement {
         titulo: "Clon Ejemplo  Frontend 5",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         imagenes: [
@@ -67,7 +82,7 @@ class proyectoMini extends HTMLElement {
         titulo: "Clon Ejemplo  Frontend 6",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         imagenes: [
@@ -80,7 +95,7 @@ class proyectoMini extends HTMLElement {
         titulo: "Clon Ejemplo  Frontend 7",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         imagenes: [
@@ -93,7 +108,7 @@ class proyectoMini extends HTMLElement {
         titulo: "Clon Ejemplo  Frontend 8",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         imagenes: [
@@ -106,7 +121,7 @@ class proyectoMini extends HTMLElement {
         titulo: "Clon Ejemplo  Frontend 9",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         imagenes: [
