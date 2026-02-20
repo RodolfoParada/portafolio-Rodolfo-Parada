@@ -13,7 +13,7 @@ class proyectoFrontend extends HTMLElement {
          "assets/frontend/pokemon/poke-normal.png",
          "assets/frontend/pokemon/poke-todos.png",
          "assets/frontend/pokemon/poke-detalle.png",
-          "assets/frontend/pokemon/poke-normal-modoOscuro.png",
+         "assets/frontend/pokemon/poke-normal-modoOscuro.png",
          "assets/frontend/pokemon/poke-todos-modoOscuro.png",
          "assets/frontend/pokemon/poke-detalle-modoOscuro.png",
         ]
@@ -36,16 +36,17 @@ class proyectoFrontend extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo  Frontend 3",
-        descripcion: "Simulación de la red social usando Vue.js.",
-        lenguaje: "HTML, CSS, JS",
+        titulo: "CONSUMO API RICK AND MORTY",
+        descripcion: "Listado de personajes.",
+        lenguaje: "HTML,JS, VUE.JS, BOOTSTRAP",
         texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
+        video: "https://www.youtube.com/watch?v=yWcOhiHLdP4",
+        codigo: "https://github.com/RodolfoParada/RickandMortyVue",
+        vista: "https://rodolfoparada.github.io/RickandMortyVue/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+          "assets/frontend/rickAndMorty/personajes.png",
+          "assets/frontend/rickAndMorty/personajes2.png",
+          "assets/frontend/rickAndMorty/personajes3.png",
         ]
       },
         {
@@ -68,6 +69,7 @@ class proyectoFrontend extends HTMLElement {
         texto:"texto para elementos usados en el proyecto",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: "",
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -81,6 +83,7 @@ class proyectoFrontend extends HTMLElement {
         texto:"texto para elementos usados en el proyecto",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: "",
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -94,6 +97,7 @@ class proyectoFrontend extends HTMLElement {
         texto:"texto para elementos usados en el proyecto",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: "",
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -107,6 +111,7 @@ class proyectoFrontend extends HTMLElement {
         texto:"texto para elementos usados en el proyecto",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: "",
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -120,6 +125,7 @@ class proyectoFrontend extends HTMLElement {
         texto:"texto para elementos usados en el proyecto",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: "",
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
