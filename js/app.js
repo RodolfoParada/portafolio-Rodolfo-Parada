@@ -26,36 +26,49 @@ async function loadView(name) {
 
 // Lógica para manejar pestañas, scroll y carruseles en la vista de proyectos
 function initProyectosLogic() {
+    const savedCategoria = localStorage.getItem('proyectos-categoria');
     const botones = document.querySelectorAll("#categoriaTabs .nav-link");
     const componentes = document.querySelectorAll(".proyecto");
     const tabsContainer = document.getElementById('categoriaTabs');
     const scrollAmount = 150;
 
     botones.forEach((btn) => {
-        btn.onclick = () => {
-            // Cambiar estado de botones
-            botones.forEach((b) => b.classList.remove("active"));
-            btn.classList.add("active");
+    btn.onclick = () => {
 
-            const categoria = btn.dataset.categoria;
-            
-            // Mostrar/Ocultar componentes [cite: 3988-3990]
-            componentes.forEach((comp) => {
-                const isTarget = comp.tagName.toLowerCase() === `proyecto-${categoria}`;
-                comp.style.display = isTarget ? "block" : "none";
+        botones.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
 
-                // REINICIALIZAR CARRUSELES: Importante para que funcionen tras el cambio de pestaña
-                if (isTarget) {
-                    setTimeout(() => {
-                        const carousels = comp.querySelectorAll('.carousel');
-                        carousels.forEach(el => {
-                            bootstrap.Carousel.getOrCreateInstance(el).to(0);
-                        });
-                    }, 50);
-                }
-            });
-        };
-    });
+        const categoria = btn.dataset.categoria;
+
+        // 🔥 Guardar en localStorage
+        localStorage.setItem('proyectos-categoria', categoria);
+
+        componentes.forEach((comp) => {
+            const isTarget = comp.tagName.toLowerCase() === `proyecto-${categoria}`;
+            comp.style.display = isTarget ? "block" : "none";
+
+            if (isTarget) {
+                setTimeout(() => {
+                    const carousels = comp.querySelectorAll('.carousel');
+                    carousels.forEach(el => {
+                        bootstrap.Carousel.getOrCreateInstance(el).to(0);
+                    });
+                }, 50);
+            }
+        });
+    };
+});
+
+
+// 🔥 Restaurar pestaña guardada
+if (savedCategoria) {
+    const btnToActivate = document.querySelector(
+        `#categoriaTabs .nav-link[data-categoria="${savedCategoria}"]`
+    );
+    if (btnToActivate) {
+        btnToActivate.click();
+    }
+}
 
     // Eventos de scroll para las pestañas [cite: 3993-3994]
     const btnLeft = document.getElementById('scrollLeft');
