@@ -2,25 +2,26 @@ class proyectoCrud extends HTMLElement {
   connectedCallback() {
     const proyectos = [
       {
-        titulo: "Clon Ejemplo CRUD 1",
+        titulo: "SISTEMA DE ORDENES CRUD CON LOCALSTATE",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=dR0wppDscAc",
+        codigo: "https://github.com/RodolfoParada/producto-js",
+        vista: "https://rodolfoparada.github.io/producto-js/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+         "assets/proyectoCRUD/productoCrud/crud-producto.png",
+     
         ]
       },
       {
-        titulo: "Clon Ejemplo CRUD 2",
+        titulo: "PROYECTO CRUD 2",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -28,12 +29,13 @@ class proyectoCrud extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo CRUD 3",
+        titulo: "PROYECTO CRUD 3",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -41,12 +43,13 @@ class proyectoCrud extends HTMLElement {
         ]
       },
         {
-        titulo: "Clon Ejemplo CRUD 4",
+        titulo: "PROYECTO CRUD 4",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -54,12 +57,13 @@ class proyectoCrud extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo CRUD 5",
+        titulo: "PROYECTO CRUD 5",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -67,12 +71,13 @@ class proyectoCrud extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo CRUD 6",
+        titulo: "PROYECTO CRUD 6",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -80,12 +85,13 @@ class proyectoCrud extends HTMLElement {
         ]
       },
        {
-        titulo: "Clon Ejemplo CRUD 7",
+        titulo: "PROYECTO CRUD 7",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -93,12 +99,13 @@ class proyectoCrud extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo CRUD 8",
+        titulo: "PROYECTO CRUD 8",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -106,12 +113,13 @@ class proyectoCrud extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo CRUD 9",
+        titulo: "PROYECTO CRUD 9",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",

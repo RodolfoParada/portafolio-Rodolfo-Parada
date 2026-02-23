@@ -1,26 +1,28 @@
 class proyectoJuegos extends HTMLElement {
  connectedCallback() {
-    const proyectos = [
+        const proyectos = [
       {
-        titulo: "Clon Ejemplo Juegos 1",
-        descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
-        lenguaje: "HTML, CSS, JS",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
-        texto:"texto para elementos usados en el proyecto",
+        titulo: "Adivina al Pokemon",
+        descripcion: "Es un juego de adivinanza de pokemones.",
+        lenguaje: "VUE.JS, CSS",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=-hTxFvYSGl8",
+        codigo: "https://github.com/RodolfoParada/Pokemon_Game",
+        vista: "https://rodolfoparada.github.io/Pokemon_Game/", 
         imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
+         "assets/proyectoJuegos/juegoPokemon/poke.png",
+         "assets/proyectoJuegos/juegoPokemon/poke1.png",
+         "assets/proyectoJuegos/juegoPokemon/poke2.png",
         ]
       },
       {
-        titulo: "Clon Ejemplo Juegos 2",
+        titulo: "Proyecto Juegos 2",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -28,14 +30,13 @@ class proyectoJuegos extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Juegos 3",
+        titulo: "Proyecto Juegos 3",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
-        video: "https://tu-demo-netflix.com",
-        código: "https://github.com/tuusuario/clon-netflix",
+        vista: " ", 
            imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -43,12 +44,13 @@ class proyectoJuegos extends HTMLElement {
         ]
       },
         {
-        titulo: "Clon Ejemplo Juegos 4",
+        titulo: "Proyecto Juegos 4",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
-        texto:"texto para elementos usados en el proyecto",
+        vista: " ", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -56,12 +58,13 @@ class proyectoJuegos extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Juegos 5",
+        titulo: "Proyecto Juegos 5",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -69,14 +72,13 @@ class proyectoJuegos extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Juegos 6",
+        titulo: "Proyecto Juegos 6",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
-        video: "https://tu-demo-netflix.com",
-        código: "https://github.com/tuusuario/clon-netflix",
+        vista: " ", 
            imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -84,12 +86,13 @@ class proyectoJuegos extends HTMLElement {
         ]
       },
        {
-        titulo: "Clon Ejemplo Juegos 7",
+        titulo: "Proyecto Juegos 7",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
-        texto:"texto para elementos usados en el proyecto",
+        vista: " ", 
         imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -97,12 +100,13 @@ class proyectoJuegos extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Juegos 8",
+        titulo: "Proyecto Juegos 8",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
+        vista: " ", 
         imagenes: [
         "assets/Mantenimiento/Mantenimiento.png",
         "assets/Mantenimiento/Mantenimiento.png",
@@ -110,14 +114,13 @@ class proyectoJuegos extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Juegos 9",
+        titulo: "Proyecto Juegos 9",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
-        video: "https://tu-demo-netflix.com",
-        código: "https://github.com/tuusuario/clon-netflix",
+         vista: " ", 
            imagenes: [
          "assets/Mantenimiento/Mantenimiento.png",
          "assets/Mantenimiento/Mantenimiento.png",
@@ -125,7 +128,6 @@ class proyectoJuegos extends HTMLElement {
         ]
       }
     ];
-
    this.innerHTML = `
       <link rel="stylesheet" href="css/proyectos.css"/>
       <link rel="stylesheet" href="css/dark-mode.css"/>
