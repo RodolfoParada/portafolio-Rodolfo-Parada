@@ -2,8 +2,22 @@ class proyectoCrud extends HTMLElement {
   connectedCallback() {
     const proyectos = [
       {
-        titulo: "SISTEMA DE ORDENES CRUD CON LOCALSTATE",
-        descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
+        titulo: "SISTEMA CRUD POKEAPI CON VUE",
+        descripcion: "CRUD en memoria, se consula la pokeapi con VUE.JS y se depliegua en desarrollo en github pages",
+        lenguaje: "VUE.JS",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=q-cCV8ZjjlM",
+        codigo: "https://github.com/RodolfoParada/CRUD-Pokeapi-Vue",
+        vista: "https://rodolfoparada.github.io/CRUD-Pokeapi-Vue/#/", 
+        imagenes: [
+         "assets/proyectoCRUD/crudPokemon/p-1.png",
+         "assets/proyectoCRUD/crudPokemon/p-2.png",
+          "assets/proyectoCRUD/crudPokemon/p-3.png",
+        ]
+      },
+         {
+        titulo: "SISTEMA DE ORDENES CRUD CON LOCALSTORAGE",
+        descripcion: "Aplicación CRUD en memoria utilizando LocalStorage para gestionar órdenes de compra. despliegue en desarrollo github pages",
         lenguaje: "HTML, CSS, JS",
         texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://www.youtube.com/watch?v=dR0wppDscAc",
@@ -12,20 +26,6 @@ class proyectoCrud extends HTMLElement {
         imagenes: [
          "assets/proyectoCRUD/productoCrud/crud-producto.png",
      
-        ]
-      },
-      {
-        titulo: "PROYECTO CRUD 2",
-        descripcion: "Interfaz similar a Spotify construida con React.",
-        lenguaje: "HTML, CSS, JS",
-        texto:"Puedes revisar más información en los siguientes botones:",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
-        vista: " ", 
-        imagenes: [
-        "assets/Mantenimiento/Mantenimiento.png",
-        "assets/Mantenimiento/Mantenimiento.png",
-        "assets/Mantenimiento/Mantenimiento.png",
         ]
       },
       {
