@@ -2,10 +2,28 @@ class proyectoEcommerce extends HTMLElement {
   connectedCallback() {
     const proyectos = [
       {
-        titulo: "Clon Ejemplo Ecommerce 1",
+        titulo: "Proyecto Poleras-Store",
+        descripcion: "Simulación de e-commerce",
+        lenguaje: "HTML, CSS, JS, BOOTSTRAP",
+        texto:"Puedes revisar más información en los siguientes botones:",
+        video: "https://www.youtube.com/watch?v=E7jNoKYEHD8",
+        codigo: "https://github.com/RodolfoParada/Polera-Store",
+        vista: "https://rodolfoparada.github.io/Polera-Store/", 
+        imagenes: [
+         "assets/ecommerce/polera-store/Polera-Store1.png",
+         "assets/ecommerce/polera-store/Polera-Store2.png",
+         "assets/ecommerce/polera-store/Polera-Store3.png",
+         "assets/ecommerce/polera-store/Polera-Store4.png",
+         "assets/ecommerce/polera-store/Polera-Store5.png",
+         "assets/ecommerce/polera-store/Polera-Store6.png",
+        
+        ]
+      },
+      {
+        titulo: "Proyecto  Ecommerce 2",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
@@ -16,24 +34,10 @@ class proyectoEcommerce extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Ecommerce 2",
-        descripcion: "Interfaz similar a Spotify construida con React.",
-        lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
-        video: "https://tu-video-twitter.com",
-        codigo: "https://github.com/tuusuario/clon-twitter",
-        vista: "https://github.com/tuusuario/clon-twitter", 
-        imagenes: [
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-         "assets/Mantenimiento/Mantenimiento.png",
-        ]
-      },
-      {
-        titulo: "Clon Ejemplo Ecommerce 3",
+        titulo: "Proyecto Ecommerce 3",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
@@ -44,10 +48,10 @@ class proyectoEcommerce extends HTMLElement {
         ]
       },
         {
-        titulo: "Clon Ejemplo Ecommerce 4",
+        titulo: "Proyecto Ecommerce 4",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
@@ -58,10 +62,10 @@ class proyectoEcommerce extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Ecommerce 5",
+        titulo: "Proyecto Ecommerce 5",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
@@ -72,10 +76,10 @@ class proyectoEcommerce extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Ecommerce 6",
+        titulo: "Proyecto  Ecommerce 6",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
@@ -86,10 +90,10 @@ class proyectoEcommerce extends HTMLElement {
         ]
       },
        {
-        titulo: "Clon Ejemplo Ecommerce 7",
+        titulo: "Proyecto  Ecommerce 7",
         descripcion: "Aplicación que simula la interfaz de Netflix con HTML, CSS y JS.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
@@ -100,10 +104,10 @@ class proyectoEcommerce extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Ecommerce 8",
+        titulo: "Proyecto  Ecommerce 8",
         descripcion: "Interfaz similar a Spotify construida con React.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
@@ -114,10 +118,10 @@ class proyectoEcommerce extends HTMLElement {
         ]
       },
       {
-        titulo: "Clon Ejemplo Ecommerce 9",
+        titulo: "Proyecto  Ecommerce 9",
         descripcion: "Simulación de la red social usando Vue.js.",
         lenguaje: "HTML, CSS, JS",
-        texto:"texto para elementos usados en el proyecto",
+        texto:"Puedes revisar más información en los siguientes botones:",
         video: "https://tu-video-twitter.com",
         codigo: "https://github.com/tuusuario/clon-twitter",
         vista: "https://github.com/tuusuario/clon-twitter", 
