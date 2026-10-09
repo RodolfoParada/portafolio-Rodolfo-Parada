@@ -138,13 +138,13 @@ body {
 
 #app-container:has(.projects-page) {
   background-color: #f7f9fc;
-  padding-top: 80px;
   padding-bottom: 48px;
 }
 
 .projects-page {
   min-height: calc(100vh - 74px);
-  padding: 8px 0 56px;
+  margin-top: 56px;
+  padding: 0 0 56px;
   background-color: #f7f9fc;
   color: #202630;
 }
@@ -155,6 +155,7 @@ body {
 }
 
 .projects-hero {
+  padding-top: 40px;
   margin-bottom: 56px;
 }
 
@@ -325,6 +326,7 @@ body.dark-mode .projects-selected-heading {
   }
 
   .projects-hero {
+    padding-top: 32px;
     margin-bottom: 38px;
   }
 
