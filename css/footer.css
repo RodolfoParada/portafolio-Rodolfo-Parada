@@ -1,94 +1,174 @@
-.footer {
-    background-color: #394476;
-    color: #F0F6FD;
-    height: 125px;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .titulo-color {
-    color: #E4EEFB;
-  }
-  
-  .img-linkedin, .img-github, .img-gmail, .img-item {
-    width: 30px;
-  }
-  
-  
-  .img-item {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px; /* Espacio horizontal entre imágenes */
-  }
-  
-  @media (max-width: 579px) {
-    .footer {
-      height: 168px; /* Ajusta la altura a tus necesidades */
-      padding: 0px 0; /* Agrega un poco de espacio interno para aumentar la altura */
-      text-align: center; /* Centra el contenido en el footer */
-    }
-  }
-
-
-  /* titulo de contactame footer */
-  .titulo-contacto {
-    position: absolute; /* El texto se puede mover libremente sin afectar el flujo */
-    top: -40px; /* Ajusta cuánto sobresale */
-    left: 50%; /* Centrado horizontal */
-    transform: translateX(-50%); /* Centrado exacto */
-    font-size: 2rem; /* Tamaño más grande */
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    background-color: transparent; /* Fondo transparente para efecto */
-    padding: 10px 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Efecto de resplandor */
-    z-index: 10; /* Para que se quede por encima de otros elementos */
-    animation: neonGlow 1.5s ease-in-out infinite alternate, floatUp 3s ease-out forwards;
-  }
-  
-  /* Animación para el texto que hace que sobresalga y brille */
-  @keyframes neonGlow {
-    0% {
-      text-shadow: 0 0 5px #fff, 0 0 10px #394476, 0 0 15px #394476, 0 0 20px #95AEE9, 0 0 30px #95AEE9, 0 0 40px #95AEE9;
-    }
-    100% {
-      text-shadow: 0 0 10px #fff, 0 0 15px #394476, 0 0 20px #394476, 0 0 30px #95AEE9, 0 0 40px #95AEE9, 0 0 50px #95AEE9;
-    }
-  }
-  
-  /* Animación para el movimiento del texto */
-  @keyframes floatUp {
-    0% {
-      top: 20px;
-      opacity: 0;
-    }
-    100% {
-      top: -60px;
-      opacity: 1;
-    }
-  }
-  
-  footer {
-    position: relative; /* Mantén el flujo del footer */
-  }
-  
-  footer .container {
-    position: relative; /* No se verá afectado por el texto sobresaliente */
-  }
-
-  /*efectos del centro de linkedin y github*/
-  .centro-image{
-    width: 40px;
-    height: 40px;
-    border-radius: 0%;
-    transition: all 0.3s ease-in-out;
+:host {
+  display: block;
 }
 
-.centro-image {
-  transform: scale(1.2); /* Aumenta el tamaño */
-  border-radius: 50%;    /* Convierte la imagen en un círculo */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Opcional: sombra */
-  cursor: pointer;
+.footer {
+  position: fixed;
+  z-index: 1030;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 140px;
+  padding: 24px clamp(24px, 3vw, 48px);
+  border-top: 1px solid #dce2eb;
+  border-radius: 8px 8px 0 0;
+  background: #fff;
+  color: #172033;
+  font: 16px/1.5 Arial, sans-serif;
+}
+
+:host-context(body.long-content-view) .footer {
+  position: static;
+}
+
+.footer__identity,
+.footer__details,
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+
+.footer__identity {
+  gap: 18px;
+}
+
+.footer__portrait {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer__bio {
+  display: grid;
+  gap: 6px;
+}
+
+.footer__name {
+  font-weight: 700;
+}
+
+.footer__tagline,
+.footer__copyright {
+  color: #617493;
+}
+
+.footer__details {
+  gap: 30px;
+}
+
+.footer__social {
+  gap: 18px;
+}
+
+.footer__social-link {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #dce2eb;
+  border-radius: 50%;
+  color: #617493;
+  transition: background-color 160ms ease, color 160ms ease;
+}
+
+.footer__social-link:hover {
+  background: #f3f6fa;
+  color: #394476;
+}
+
+.footer__social-link svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.footer__copyright {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    min-height: 124px;
+    padding: 18px 20px;
+  }
+
+  .footer__identity {
+    gap: 12px;
+  }
+
+  .footer__portrait {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  .footer__tagline,
+  .footer__copyright {
+    font-size: 14px;
+  }
+
+  .footer__details {
+    gap: 14px;
+  }
+
+  .footer__social {
+    gap: 8px;
+  }
+
+  .footer__social-link {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer {
+    min-height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    padding: 14px 16px;
+  }
+
+  .footer__identity {
+    width: 100%;
+  }
+
+  .footer__details {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-left: 60px;
+  }
+}
+
+:host-context(body.dark-mode) .footer {
+  border-color: #343a46;
+  background: #17191f;
+  color: #f0f2f6;
+}
+
+:host-context(body.dark-mode) .footer__tagline,
+:host-context(body.dark-mode) .footer__copyright,
+:host-context(body.dark-mode) .footer__social-link {
+  color: #b6c0d0;
+}
+
+:host-context(body.dark-mode) .footer__social-link {
+  border-color: #424957;
+}
+
+:host-context(body.dark-mode) .footer__social-link:hover {
+  background: #292e38;
+  color: #fff;
 }

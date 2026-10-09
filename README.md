@@ -39,3 +39,6 @@ Combino una sólida base en **Administración de Empresas** con la agilidad del 
 Si buscas un perfil que entienda tanto el código como el negocio y la experiencia de usuario, ¡conectemos!
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rodolfoparada/)
+
+proyecto se levanta con 
+python3 -m http.server 8000

@@ -1,100 +1,44 @@
-class footer extends HTMLElement {
-  constructor() {
-    super();
-  }
-//dsa
+class Footer extends HTMLElement {
   connectedCallback() {
-    const shadow = this.attachShadow({ mode: 'open' });
-    shadow.innerHTML = `
-             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> 
-              <link rel="stylesheet" href="css/footer.css"/>
-              <link rel="stylesheet" href="css/dark-mode.css"/>
-   <footer class="footer text-white py-4 fixed-bottom">
-    <div class="container">
-      <h5 class="titulo-contacto cuadro-contacto" data-bs-toggle="tooltip" title="Puedes contactarme desde el icono de LinkedIn">Contáctame</h5>
-      <div class="row justify-content-between align-items-center">
-        
-        <!-- Lista izquierda -->
-        <div class="col-3 text-center ">
-        <div>
-            <a><img src="assets/iconos/react.png" class="img-item" style="width:30px; height:30px ;" alt="React" data-bs-toggle="tooltip" title="React.js">
-            </a>
-            <a>
-              <img src="assets/iconos/angular.png" class="img-item" style="width:30px; height:30px ;" alt="Angular" data-bs-toggle="tooltip" title="Angular.js">
-            </a>
-            <a>
-             <img src="assets/iconos/vue.png" class="img-item"  style="width:30px; height:30px ;" alt="Vue.js" data-bs-toggle="tooltip" title="Vue.js">
-            </a>    
-            </a>
-              <img src="assets/iconos/javascripts.png" class="img-item" style="width:30px; height:30px ;" alt="Javascript" data-bs-toggle="tooltip" title="Javascript">
-            </a>
-        </div>
-        <div>
-            <a>
-            <img src="assets/iconos/node.png" class="img-item" style="width:30px; height:30px ;" alt="Node.js" data-bs-toggle="tooltip" title="Node.js">
-            </a>
-            <a>
-              <img src="assets/iconos/typescript.png" class="img-item" style="width:30px; height:30px ;" alt="Typescript" data-bs-toggle="tooltip" title="Typescript">
-            </a>
-            <a>
-              <img src="assets/iconos/github.png" class="img-item"  style="width:30px; height:30px ;" alt="GitHub" data-bs-toggle="tooltip" title="GitHub">
-            </a>
-          </div> 
-        </div>
-     
+    this.attachShadow({ mode: "open" });
+    this.render();
+  }
 
-        <!-- Sección de contacto (Centro) -->
-        <div class="col-6 text-center titulo-color ">
-         <div class="container">
-        
-        </div>
-          <p>
-            <a href="https://www.linkedin.com/in/rodolfoparada/" target="_blank" rel="link">
-              <img src="assets/footer/linkedin.jpg" alt="Imagen de contacto" class="img-linkedin centro-image me-3 mt-3" data-bs-toggle="tooltip" title="Contactame por LinkedIn">
-            </a>
-            <a href="https://github.com/RodolfoParada" target="_blank" rel="github">
-              <img src="assets/footer/github.png" alt="Imagen de contacto" class="img-github centro-image mt-3" data-bs-toggle="tooltip" title="Puedes ver mi GitHub">
-            </a>
-          </p>
-        </div>
+  render() {
+    const year = new Date().getFullYear();
 
-        <!-- Lista derecha -->
-        <div class="col-3 text-center">
-         <div> 
-            <a>
-              <img src="assets/iconos/springboot.png" class="img-item" style="width:30px; height:30px;" alt="SpringBoot" data-bs-toggle="tooltip" title="SpringBoot">
-            </a>
-             <a>
-              <img src="assets/iconos/java.png" class="img-item" style="width:30px; height:30px;" alt="Java" data-bs-toggle="tooltip" title="Java">
-            </a>
-             <a>
-              <img src="assets/iconos/html-5.png" class="img-item" style="width:30px; height:30px ;" alt="HTML5" data-bs-toggle="tooltip" title="HTML5">
-            </a>
-            <a>
-              <img src="assets/iconos/css-3.png" class="img-item" style="width:30px; height:30px ;" alt="CSS3" data-bs-toggle="tooltip" title="CSS3">
-            </a>
+    this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="css/footer.css?v=20261008d">
+      <link rel="stylesheet" href="css/dark-mode.css?v=20261008b">
+      <footer class="footer" aria-label="Información de contacto">
+        <div class="footer__identity">
+          <img class="footer__portrait" src="assets/images/rodolfo3.png" alt="Rodolfo Parada González">
+          <div class="footer__bio">
+            <strong class="footer__name">Rodolfo Parada González</strong>
+            <span class="footer__tagline">Desarrollo, diseño y visión de negocio.</span>
+          </div>
         </div>
-        <div>
-            <a>
-            <img src="assets/iconos/bootstrap.png" class="img-item" style="width:30px; height:30px ;" alt="Bootstrap" data-bs-toggle="tooltip" title="Bootstrap">
+        <div class="footer__details">
+          <nav class="footer__social" aria-label="Redes sociales">
+            <a class="footer__social-link" href="https://github.com/RodolfoParada"
+              target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.2-1.5 6.2-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.2-.4-3.8 1.4a13 13 0 0 0-6.9 0C5.5 1.1 4.3 1.5 4.3 1.5a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-.9 2.7V22"/>
+              </svg>
             </a>
-            <a>
-              <img src="assets/iconos/git.png" class="img-item" style="width:30px; height:30px ;" alt="Git" data-bs-toggle="tooltip" title="Git">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/rodolfoparada/"
+              target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 9v11M4 4v.1M9 20v-6.2a4 4 0 0 1 8 0V20m-8-7v7m8-7v7"/>
+                <circle cx="4" cy="4" r="1"/>
+              </svg>
             </a>
-            <a>
-              <img src="assets/iconos/gitlab.png" class="img-item"  style="width:30px; height:30px ;" alt="GitLab" data-bs-toggle="tooltip" title="GitLab">
-            </a>
-          </div> 
-      </div>
-
-      <!-- Línea de copyright -->
-      <div class="text-center">
-        <p class="copyright">&copy; 2025 Rodolfo Parada González. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-
-`;
+          </nav>
+          <span class="footer__copyright">© ${year} Rodolfo Parada</span>
+        </div>
+      </footer>
+    `;
   }
 }
-window.customElements.define("mi-footer", footer);
+
+customElements.define("mi-footer", Footer);

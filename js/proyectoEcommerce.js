@@ -136,7 +136,6 @@ class proyectoEcommerce extends HTMLElement {
     this.innerHTML = `
       <link rel="stylesheet" href="css/proyectos.css"/>
       <link rel="stylesheet" href="css/dark-mode.css"/>
-      <link rel="stylesheet" href="css/ecommerce.css"/>
       <section class="mb-5">
         <h5 class="fw-bold">Proyectos E-Commerce : Sitios de ventas de productos o servicios con carrito, pagos, etc.</h5>
         <paginacion-cards></paginacion-cards>
@@ -187,25 +186,6 @@ class proyectoEcommerce extends HTMLElement {
       `;
       paginador.dataList = proyectos;
     }
-     // después de renderizar las cards:
-     const root = this; // o pc.shadowRoot si renderizas dentro de <paginacion-cards> con Shadow DOM
-     root.querySelectorAll('.proyecto-card').forEach(card => {
-     const el = card.querySelector('.carousel');
-     const inst = bootstrap.Carousel.getOrCreateInstance(el);
-     card.querySelector('.carousel-control-next')?.addEventListener('click', e => { e.preventDefault(); inst.next(); });
-     card.querySelector('.carousel-control-prev')?.addEventListener('click', e => { e.preventDefault(); inst.prev(); });
-    });
-
-const botonesContainer = card.querySelector('.d-flex.gap-2');
-p.botones.forEach(b => {
-  const btn = document.createElement('a');
-  btn.href = b.url;
-  btn.target = '_blank';
-  btn.className = `btn ${b.clase} btn-sm`;
-  btn.textContent = b.texto;
-  botonesContainer.appendChild(btn);
-});
-
 
   }
 }
@@ -213,4 +193,3 @@ p.botones.forEach(b => {
 
 
 customElements.define('proyecto-ecommerce', proyectoEcommerce);
-

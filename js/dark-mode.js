@@ -9,9 +9,11 @@ class ModoOscuro extends HTMLElement {
     this.innerHTML = `
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     
-      <button class="toggle-button btn btn-outline-light ms-3"
+      <button class="toggle-button"
+        type="button"
+        aria-label="Cambiar a modo oscuro"
         data-bs-toggle="tooltip"
-        title="Modo Claro">🌙</button>
+        title="Modo Oscuro">🌙</button>
     `;
 
     const toggleButton = this.querySelector('.toggle-button');
@@ -45,6 +47,7 @@ class ModoOscuro extends HTMLElement {
       document.body.removeAttribute('style'); // limpiar estilo en línea si existía
       toggleButton.textContent = '☀️';
       toggleButton.setAttribute('title', 'Modo Claro');
+      toggleButton.setAttribute('aria-label', 'Cambiar a modo claro');
     } else {
       document.body.classList.remove('dark-mode');
       document.body.removeAttribute('style'); // limpiar estilos anteriores
@@ -55,6 +58,7 @@ class ModoOscuro extends HTMLElement {
 
       toggleButton.textContent = '🌙';
       toggleButton.setAttribute('title', 'Modo Oscuro');
+      toggleButton.setAttribute('aria-label', 'Cambiar a modo oscuro');
     }
 
     // Volver a crear el tooltip con el nuevo título
