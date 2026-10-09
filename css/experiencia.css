@@ -1,12 +1,264 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-.light-mode body {
-  background-color: #95AEE9 !important;;
+
+body:has(.experiencia-page) {
+  background-color: #f7f9fc !important;
 }
+
+.experiencia-page {
+  min-height: calc(100vh - 74px);
+  margin-top: 56px;
+  padding: 0 0 64px;
+  background: #f7f9fc;
+  color: #202630;
+}
+
 .experiencia {
-  margin-top: 100px; /* Ajusta el valor según sea necesario */
+  width: min(100% - 56px, 1440px);
+  margin: 0 auto;
+}
+
+.experiencia-header {
+  padding: 40px 0 56px;
+}
+
+.experiencia-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 24px;
+  color: #617493;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.experiencia-eyebrow span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #2162ff;
+}
+
+.experiencia-header h1 {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 68px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.experiencia-header h1 span {
+  color: #2162ff;
+}
+
+.experiencia-intro {
+  margin: 20px 0 0;
+  color: #617493;
+  font-size: 21px;
+}
+
+.experiencia-list {
+  border-top: 1px solid #dfe5ee;
+}
+
+.experiencia-item {
+  display: grid;
+  grid-template-columns: minmax(300px, 25%) minmax(0, 1fr);
+  gap: 0;
+  padding: 34px 0 38px;
+  border-bottom: 1px solid #dfe5ee;
+}
+
+.experiencia-periodo {
+  align-self: start;
+  margin: 7px 0 0;
+  color: #617493;
+  font-size: 17px;
+}
+
+.experiencia-empresa {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.experiencia-empresa h2 {
+  margin: 0;
+  color: #202630;
+  font-size: clamp(26px, 2.4vw, 34px);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.experiencia-tipo {
+  flex: 0 0 auto;
+  padding: 6px 11px;
+  border: 1px solid #d6e2ff;
+  border-radius: 999px;
+  background: #edf4ff;
+  color: #2162ff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.experiencia-empresa img {
+  width: auto;
+  max-width: 110px;
+  max-height: 34px;
+  object-fit: contain;
+}
+
+.experiencia-cargo {
+  margin: 22px 0 0;
+  color: #2162ff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.experiencia-organizacion {
+  margin: 12px 0 0;
+  color: #536781;
+  font-size: 17px;
+}
+
+.experiencia-ubicacion {
+  margin: 6px 0 0;
+  color: #7b8798;
+  font-size: 15px;
+}
+
+.experiencia-descripcion {
+  margin-top: 26px;
+  color: #536781;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.experiencia-descripcion p {
+  margin: 0 0 12px;
+}
+
+.experiencia-descripcion h3 {
+  margin: 18px 0 8px;
+  color: #202630;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.experiencia-logros {
+  margin: 8px 0 16px;
+  padding-left: 20px;
+}
+
+.experiencia-logros li {
+  padding-left: 2px;
+}
+
+.experiencia-descripcion .experiencia-logro {
+  margin-top: 12px;
+}
+
+body.dark-mode .experiencia-page {
+  background: #17191f;
+  color: #f0f2f6;
+}
+
+body.dark-mode:has(.experiencia-page) {
+  background-color: #17191f !important;
+}
+
+body.dark-mode .experiencia-header h1,
+body.dark-mode .experiencia-empresa h2,
+body.dark-mode .experiencia-descripcion h3 {
+  color: #f0f2f6;
+}
+
+body.dark-mode .experiencia-tipo {
+  border-color: #424957;
+  background: #252c3a;
+  color: #a9c1ff;
+}
+
+body.dark-mode .experiencia-eyebrow,
+body.dark-mode .experiencia-periodo,
+body.dark-mode .experiencia-intro,
+body.dark-mode .experiencia-descripcion,
+body.dark-mode .experiencia-organizacion,
+body.dark-mode .experiencia-ubicacion {
+  color: #b6c0d0;
+}
+
+body.dark-mode .experiencia-list,
+body.dark-mode .experiencia-item {
+  border-color: #343a46;
+}
+
+@media (max-width: 991px) {
+  .experiencia-page {
+    min-height: calc(100vh - 32px);
+    margin-top: 56px;
+  }
+
+  .experiencia-item {
+    grid-template-columns: minmax(220px, 25%) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .experiencia {
+    width: calc(100% - 36px);
+  }
+
+  .experiencia-header {
+    padding: 32px 0 36px;
+  }
+
+  .experiencia-eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .experiencia-intro {
+    font-size: 18px;
+  }
+
+  .experiencia-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 0 28px;
+  }
+
+  .experiencia-periodo {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .experiencia-empresa h2 {
+    font-size: 26px;
+  }
+
+  .experiencia-cargo {
+    margin-top: 14px;
+  }
+
+  .experiencia-organizacion {
+    font-size: 16px;
+  }
+
+  .experiencia-descripcion {
+    margin-top: 18px;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .experiencia-descripcion h3 {
+    font-size: 17px;
+  }
 }

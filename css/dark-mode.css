@@ -100,7 +100,7 @@ color:#F0F6FD;
 }
 :host-context(body.dark-mode) .nav-link:hover,
 :host-context(body.dark-mode) .titulo-rodolfo:hover {
-color: #333 !important; /* o cualquier color que contraste */
+color: #a9c1ff !important;
 }
 
 :host-context(body.dark-mode) .img-perfil {
@@ -114,19 +114,14 @@ color: #333 !important; /* o cualquier color que contraste */
   color: #f8f9fa !important;
 }
 
-:host-context(body.dark-mode) .titulo-contacto,
-:host-context(body.dark-mode) .copyright {
-  color: white !important;
-  background-color: #333 !important;
+:host-context(body.dark-mode) .footer__tagline,
+:host-context(body.dark-mode) .footer__copyright,
+:host-context(body.dark-mode) .footer__social-link {
+  color: #b6c0d0 !important;
 }
 
-:host-context(body.dark-mode) .img-item:hover {
-  filter: brightness(1.5)!important;
-}
-
-:host-context(body.dark-mode) .titulo-contacto,
-:host-context(body.dark-mode) .copyright {
-  background-color: black !important;
+:host-context(body.dark-mode) .footer__social-link {
+  border-color: #424957;
 }
 
 /* Estilo en modo oscuro portafolio*/

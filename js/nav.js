@@ -7,38 +7,52 @@ class Navegacion extends HTMLElement {
   connectedCallback() {
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="./css/nav.css"/>
-      <link rel="stylesheet" href="./css/dark-mode.css"/>
-   
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top color px-3">
-        <div class="container-fluid">
-          <a class="titulo-rodolfo fw-bold fs-5 text-white" href="/" data-link>Rodolfo Parada González</a>
-        
-          <button class="navbar-toggler" id="btn-toggle" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          
-          <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#/" data-link>Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#/experiencia" data-link>Experiencia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#/formacion" data-link>Formación</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#/proyectos" data-link>Proyectos</a>
-              </li>
+      <link rel="stylesheet" href="./css/nav.css?v=20261008e"/>
+      <link rel="stylesheet" href="./css/dark-mode.css?v=20261008c"/>
+
+      <nav class="site-navbar" aria-label="Navegación principal">
+        <div class="nav-inner">
+          <a class="site-brand" href="/" data-link aria-label="Rodolfo Parada, inicio">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="m11 9-7 7 7 7M21 9l7 7-7 7M19 5l-6 22"/>
+              </svg>
+            </span>
+            <span class="brand-copy">
+              <strong>Rodolfo Parada</strong>
+              <small>DESARROLLADOR FULL STACK</small>
+            </span>
+          </a>
+
+          <div class="nav-menu" id="menu">
+            <ul class="nav-links">
+              <li><a class="nav-link" href="#/" data-link>Sobre mí</a></li>
+              <li><a class="nav-link" href="#/experiencia" data-link>Experiencia</a></li>
+              <li><a class="nav-link" href="#/formacion" data-link>Formación</a></li>
+              <li><a class="nav-link" href="#/proyectos" data-link>Proyectos</a></li>
             </ul>
-            
-            <div class="d-flex align-items-center gap-2 ms-lg-auto mt-2 mt-lg-0">
-              <mi-modo-oscuro></mi-modo-oscuro>
-              <img src="assets/images/rodolfo3.png" alt="Perfil" class="rounded-circle img-perfil"
-              style="width: 40px; height: 40px; object-fit: cover;">
-            </div>
+            <a class="contact-link contact-link--mobile" href="https://www.linkedin.com/in/rodolfoparada/"
+              target="_blank" rel="noopener noreferrer">
+              Hablemos
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="nav-actions">
+            <mi-modo-oscuro></mi-modo-oscuro>
+            <a class="contact-link contact-link--desktop" href="https://www.linkedin.com/in/rodolfoparada/"
+              target="_blank" rel="noopener noreferrer">
+              Hablemos
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9"/>
+              </svg>
+            </a>
+            <button class="menu-toggle" id="btn-toggle" type="button"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+              <span></span><span></span><span></span>
+            </button>
           </div>
         </div>
       </nav>
@@ -46,30 +60,50 @@ class Navegacion extends HTMLElement {
 
     const toggleBtn = this.shadowRoot.getElementById("btn-toggle");
     const menu = this.shadowRoot.getElementById("menu");
-    
-    // Toggle del menú hamburguesa
+
+    this.routeChangeHandler = () => this.updateActiveLink();
+    window.addEventListener("hashchange", this.routeChangeHandler);
+    this.updateActiveLink();
+
     toggleBtn.addEventListener("click", () => {
-      menu.classList.toggle("show");
+      const isOpen = menu.classList.toggle("is-open");
+      toggleBtn.setAttribute("aria-expanded", String(isOpen));
+      toggleBtn.setAttribute("aria-label", isOpen ? "Cerrar menú" : "Abrir menú");
     });
 
-    // --- LÓGICA SPA PARA SHADOW DOM ---
-    this.shadowRoot.querySelectorAll('[data-link]').forEach(link => {
-      link.addEventListener('click', async (e) => {
-        e.preventDefault();
-        const href = link.getAttribute('href');
-        
-        // Importamos dinámicamente el router para navegar sin recargar
-        const { router } = await import('./router.js');
-        router.navigate(href);
-        
-        // Cerrar el menú automáticamente al hacer clic (UX para móviles)
-        if (menu.classList.contains('show')) {
-          menu.classList.remove('show');
-        }
+    this.shadowRoot.querySelectorAll("[data-link]").forEach((link) => {
+      link.addEventListener("click", async (event) => {
+        event.preventDefault();
+        const { router } = await import("./router.js");
+        router.navigate(link.getAttribute("href"));
+        menu.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
+        toggleBtn.setAttribute("aria-label", "Abrir menú");
       });
     });
+  }
 
-    console.log("Componente <mi-navegacion> cargado y vinculado al Router");
+  disconnectedCallback() {
+    if (this.routeChangeHandler) {
+      window.removeEventListener("hashchange", this.routeChangeHandler);
+    }
+  }
+
+  updateActiveLink() {
+    const links = this.shadowRoot.querySelectorAll(".nav-link");
+    const currentRoute = window.location.hash || "#/";
+    const hasMatchingRoute = [...links].some((link) => link.getAttribute("href") === currentRoute);
+    const activeRoute = hasMatchingRoute ? currentRoute : "#/";
+
+    links.forEach((link) => {
+      const isActive = link.getAttribute("href") === activeRoute;
+      link.classList.toggle("active", isActive);
+      if (isActive) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
   }
 }
 
