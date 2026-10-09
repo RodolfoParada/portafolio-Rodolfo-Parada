@@ -293,51 +293,55 @@ table.table th:hover {
 
 #app-container:has(.about-page) {
   min-height: calc(100vh - 74px);
-  padding-top: 130px;
   padding-bottom: 64px;
   background-color: #f7f9fc;
 }
 
 .about-page {
   min-height: calc(100vh - 74px);
+  margin-top: 56px;
   padding: 0 0 64px;
   background-color: #f7f9fc;
   color: #202630;
 }
 
 .about-shell {
-  width: min(1400px, calc(100% - 80px));
+  width: min(100% - 56px, 1440px);
   margin: 0 auto;
 }
 
 .about-hero {
-  padding-top: 0;
+  padding: 40px 0 56px;
 }
 
 .about-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin: 0 0 24px;
-  color: #53677f;
-  font-size: 0.875rem;
+  color: #617493;
+  font-size: 14px;
   font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .about-eyebrow::before {
-  display: inline-block;
   width: 9px;
   height: 9px;
-  margin-right: 12px;
+  flex: 0 0 9px;
   border-radius: 50%;
-  background-color: #2d64f5;
+  background-color: #2162ff;
   content: "";
 }
 
 .about-title {
-  margin: 0 0 18px;
+  margin: 0;
   color: #202630;
-  font-size: clamp(3rem, 5vw, 4rem);
+  font-size: clamp(48px, 6vw, 68px);
   font-weight: 700;
-  letter-spacing: -0.045em;
-  line-height: 1.05;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
 }
 
 .about-title span {
@@ -345,9 +349,9 @@ table.table th:hover {
 }
 
 .about-subtitle {
-  margin: 0;
+  margin: 20px 0 0;
   color: #607995;
-  font-size: 1.2rem;
+  font-size: 21px;
 }
 
 .about-profile {
@@ -612,12 +616,12 @@ body.dark-mode .about-chip-popover {
 }
 
 @media (max-width: 991px) {
-  #app-container:has(.about-page) {
-    padding-top: 88px;
-  }
-
   .about-shell {
     width: calc(100% - 48px);
+  }
+
+  .about-hero {
+    padding: 40px 0 44px;
   }
 
   .about-profile {
